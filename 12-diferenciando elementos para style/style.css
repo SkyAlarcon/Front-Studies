@@ -1,0 +1,37 @@
+* {
+/* o asterisco é um seletor universal! ou seja, ele vai fazer as configs em TODAS as coisas INCLUSIVE NO BODY */
+/* POREM, qualquer configuração colocada no arquivo CSS ainda assim vai sobrepor a config geral */
+/* ORDEM APARENTEMENTE NAO IMPORTA!!!!! */
+    background-color: black;
+}
+
+h1 {
+    color: pink;
+    background-color: purple;
+}
+/* esse daqui seta TODOS OS h1 para essa config */
+h1.ceu{
+/*  ^ quando vc coloca [elemento].[nome], vc ta tratando uma CLASSE!!!!!!!*/
+    color: white;
+    background-color: black;
+}
+/* esse SOBREPOE a config geral, mas não sei se questão de ordem influencia, talvez sim, preciso testar */
+h1#heaven{
+/*   ^ quando vc coloca [elemento]#[nome] vc ta tradando um ID, muito similar ao <a href="#[nome]"> */
+/* Por etiqueta (ou algum outro motivo misterioso que não me foi revelado pelos conhecedores da magia antiga) não é mto legal vc personalizar pelo ID do elemento
+    sempre tentar dar preferencia para style usando class */
+    color: blueviolet;
+    background-color: white;
+}
+
+/* Se vc fizer 
+h1 {}
+h1 {}
+O segundo h1 tem prioridade por causa do efeito cascata TOMA CUIDADO COM ESSA POHA
+Recomendo seguir uma ordem já pre definida que vc não se perca, senão não vai dar certo */
+/* isso tbm vai acontecer se vc bota A MESMA CONFIG NO MESMO SELETOR, como assim:
+h1{
+    color: algo
+    color: outro algo diferente
+} 
+O resultado vai ser "outro algo diferente"*/
