@@ -1,0 +1,63 @@
+/* Se você veio buscar a resposta da magia antiga, voce chegou no lugar correto */
+
+*{
+    color: pink
+}
+
+.heaven{
+    color: blue;
+}
+h1{
+    color: purple;
+}
+h1.heaven{
+    color: brown;
+}
+h1#ceu{
+    color: orange;
+}
+h1#faltou.ideia{
+/*  Fica de olho em como a escreve essa sintaxe, é mais simples do que parece, mas pode confundir! Lembra, # = ID, . = CLASS */
+    color: black;
+}
+
+/* Como funciona ESPECIFICIDADE
+Especificidade é pra saber qual config dar PRIORIDADE!
+QUANTO MAIS ESPECÍFICO, MAIOR A PRIORIDADE E ISSO SOBREOPÕE O EFEITO CASCATA
+Coloca o mouse sobre o lugar q vc quer customizar (a partezinha ANTES das chaves {})
+Vai aparecer uma caixinha
+
+--------------------------------------
+l                                     l
+l     <h1 class = "heaven">           l
+l                                     l
+l  Selector specificity (0, 1, 1)     l
+l                                     l
+---------------------------------------
+Oq importa é essa segunda linha, saca só!
+
+
+
+(0,    - Esse daqui ta falando quantos IDs tem
+1,     - Esse fala quantas CLASSES tem
+1)     - quantos tipos de ELEMENTOS
+
+como rola entao essa escolha
+
+(1, 0, 0) 
+(0, 2, 1)
+Desses dois, o primeiro GANHA pq o primeiro número do () é MAIOR q o primeiro número do outro, ou seja, compara o (1, -, -) com (0, -, -)
+
+(1, 0, 10)
+(1, 2, 1)
+O segundo ganha pq compara: (1, 0, -) com (1, 2, -)
+é sempre quem tem o maior número primeiro
+
+Em caso de empate em TUDO, quem manda é o efeito cascata!
+
+Essa é a magia antiga, agora vc também sabe ;3
+
+
+Um adendo, o seletor universal    *    NÃO CONTA PRA NENHUMA CATEGORIA DE ESPECIFICIDADE, entao qualquer coisa vai sobrepor ele
+
+*/

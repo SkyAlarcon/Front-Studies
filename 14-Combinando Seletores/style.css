@@ -1,0 +1,26 @@
+* {
+    color: black;
+    transition: all 0.5s;
+    background-color: darkgrey;
+}
+h1, h2 {
+/*^ essa vírgula funciona como "OU"
+Como ele é um OU e não está fazendo uma especificidade maior,
+perceba que o nivel de especificidade manteve (0, 0, 1) em vez de (0, 0, 2) */
+    color: purple
+}
+
+header > h1 {
+    /* ^ isso traduz para: "Elemento h1 FILHO de elemento header" 
+    ele funciona de forma que QUALQUER h1 DIRETAMENTE colocado no header
+    receba a informação, porém o h1 dentro de NAV q em seguida dentro de header não recebe */
+    color: blue;
+}
+
+div h1 {
+    color: pink;
+}
+
+div h2 {
+    color:deeppink;
+}

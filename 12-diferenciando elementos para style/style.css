@@ -18,8 +18,9 @@ h1.ceu{
 /* esse SOBREPOE a config geral, mas não sei se questão de ordem influencia, talvez sim, preciso testar */
 h1#heaven{
 /*   ^ quando vc coloca [elemento]#[nome] vc ta tradando um ID, muito similar ao <a href="#[nome]"> */
-/* Por etiqueta (ou algum outro motivo misterioso que não me foi revelado pelos conhecedores da magia antiga) não é mto legal vc personalizar pelo ID do elemento
-    sempre tentar dar preferencia para style usando class */
+/* Por etiqueta (ou algum outro motivo misterioso que não me foi revelado pelos conhecedores da magia antiga) NÃO é mto legal vc personalizar pelo ID do elemento
+    sempre tentar dar PREFERENCIA para style usando CLASS */
+/* OS CONHECEDORES DA MAGIA ANTIGA REVELARAM O MOTIVO - explicação na pasta 13 no arquivo ".css" */
     color: blueviolet;
     background-color: white;
 }
