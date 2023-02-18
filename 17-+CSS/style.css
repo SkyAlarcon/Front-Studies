@@ -1,0 +1,62 @@
+body {
+    font-size: 25px;
+    background-color: darkgray;
+}
+a {
+    text-decoration:overline line-through;
+    /* ^ decoração de texto se vc colocar "none", qualquer link vai ser RETIRADO A LINHA DEBAIXO (tira o sublinhado padrão) */
+    /* Qualquer outra modificação, vai tirar o sublinhado e colocar oq vc decidir 
+    Pra colocar mais modificações, basta vc separar por espaço*/
+}
+h1 {
+    text-align: center;
+    /* ^ alinhamento de texto. Padrão é à direita */
+    /* não é mto interessante usar "justify", mas existe a config */
+}
+p {
+    font-weight: 600;
+    /* ^ esse é o "peso" da fonte, nem toda fonte tem todos os pesos ou combinações de peso+itálico, etc */
+    /* pra checar isso inspeciona no navegador, seleciona o texto com a fonte q vc tem dúvida
+    Vai na aba "computed" do lado de "styles", seleciona o "show all", filtra por "font-family" e vc vai poder descobrir
+    exatamente a fonte usada, e com isso pesquisar quais pesos ela tem disponivel */
+
+    font-family:'Lucida Sans', sans-serif
+    /* ^ isso muda a fonte usada no texto - tem algum computador q não tem uma fonte q vc usou no site, o padrão é a
+    Times New Roman*/
+}
+p.lorem {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+                    /* ^ essa virgula seria um "fallback", ou seja, se nao encontrar a fonte q eu pedi, ele vai pra próxima da lista */
+    font-weight: 300;
+    text-align: right;
+    /* Aqui vc tem chamando a fonte nova */
+}
+nav > ul > li {
+    text-decoration: none;
+    text-align: center;
+    padding: 0px;
+    list-style-type:georgian;
+    /* ^ isso daqui vai mudar o pontinho q tem ANTES da lista pra oq vc quiser */
+}
+img {
+    border-radius: 15px;
+}
+img.um {
+    opacity: 0.5;
+    /* ^ controla opacidade - funciona com qualquer elemento */
+}
+.imgs {
+    border-radius: 5px;
+    width: 600px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px 2px black;
+            /*  ^   ^   ^   ^
+                1   2   3   4
+box-shadow vai dar a impressão de uma SOMBRA na caixa
+1. quanto pra direita (aceita numeros negativos pra ir pra esquerda)
+2. pra baixo (mesma coisa, so q pra cima)
+3. opacidade
+4. quanto a sombra vai ficar sólida ANTES de começar a diminuir opacidade
+*/
+}

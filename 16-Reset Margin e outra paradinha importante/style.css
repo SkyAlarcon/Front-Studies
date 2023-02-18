@@ -1,0 +1,46 @@
+* {
+    color: white;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* PRESTA ATENÇÃO NOS EXEMPLOS */
+
+/*
+
+h1 {
+    padding: 10px - aplica em TODOS OS LADOS
+}
+
+h1 {
+    padding: 10x 50px - o primeiro é TOP+BOTTOM e o segundo LEFT+RIGHT
+}
+
+h1 {
+    padding: 10px 50px 300px - 1. TOP, 2. LEFT+RIGHT, 3. BOTTOM
+}
+
+h1 {
+    padding: 10px 50px 300px 1px - 1. TOP, 2. RIGHT, 3. BOTTOM, 4. LEFT (começa em cima e roda sentido horário)
+}
+Funciona com imagens tbm
+
+Usar Padding, em vez de Margin pra fazer fundos é interessante pq a margin termina na borda de contato com o começo do padding, então vai rolar de ficar estranho
+(testa aí! colocar uma cor de fundo pra margin e outra pra padding pra vc entender)
+Fica mais bonitinho se vc colocar no padding
+*/
+
+h1 {
+    padding: 15px 40px;
+}
+
+p {
+    background-color: fuchsia;
+    margin: 20px 0px; /* esse daqui vai dar um "respiro" pro texto nao fica colado na borda da caixa */
+    padding: 10px 20px; /* esse daqui vai "expandir" meu BG */
+}
+
+ul {
+    padding: 0px 0px 0px 5px;
+}

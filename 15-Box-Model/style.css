@@ -1,73 +1,36 @@
-/* 
-
-https://codepen.io/guyroutledge/full/nOGbyO
-
-Box Model is content-box
-                ^ A content box vai se basear na largura do CONTEÚDO
-
-width: 300px
-length: 200px
-
-----------------------------------------------------------------------------------
-| MARGIN                                                                         |
-|  ---------------------------------------------------------------------------   |
-|  | BORDER                                                                  |   |
-|  |  ---------------------------------------------------------------------  |   |
-|  |  | PADDING                                                           |  |   |
-|  |  | ----------------------------------------------------------------  |  |   |
-|  |  | |                                                              |  |  |   |
-|  |  | |   CONTENT                                                    |  |  |   |
-|  |  | |                                                              |  |  |   |
-|  |  | |        300x200                                               |  |  |   |
-|  |  | |                                                              |  |  |   |
-|  |  | |                                                              |  |  |   |
-|  |  | |                                                              |  |  |   |
-|  |  | ----------------------------------------------------------------  |  |   |
-|  |  |                                                                   |  |   |
-|  |  ---------------------------------------------------------------------  |   |
-|  |                                                                         |   |
-|  ---------------------------------------------------------------------------   |
-|                                                                                |
-----------------------------------------------------------------------------------
-
-O CONTEÚDO da caixa vai ditar todo o resto das medidas
-
-
-
-Box Model is a border-box
-                        ^ A border box vai se basear na largura DA CAIXA POR COMPLETO
-
-width: 300px
-length: 200px
-
-----------------------------------------------------------------------------------
-| MARGIN                                                                         |
-|  ---------------------------------------------------------------------------   |
-|  | BORDER                                                                  |   |
-|  |  ---------------------------------------------------------------------  |   |
-|  |  | PADDING                                                           |  |   |
-|  |  | ----------------------------------------------------------------  |  |   |
-|  |  | |                                                              |  |  |   |
-|  |  | |   CONTENT                                                    |  |  |   |
-|  |  | |                                                              |  |  |   |
-|  |  | |                                                              |  |  |   |
-|  |  | |                                                              |  |  |   |
-|  |  | |                                                              |  |  |   |
-|  |  | |                                                              |  |  |   |
-|  |  | ----------------------------------------------------------------  |  |   |
-|  |  |                                                                   |  |   |
-|  |  ---------------------------------------------------------------------  |   |
-|  |                                                                         |   |
-|  ---------------------------------------------------------------------------   |
-|                                                                                |
-----------------------------------------------------------------------------------
-
-BOX = 300x200
-
-
-A principal diferença é q, ao colocar o tamanho da MARGIN, BORDER e PADDING,
-na CONTENT BOX, vc vai SOMANDO quanto tem cada tamanho pra dar o tamanho total da caixa
-
-na BORDER BOX vc vai ter o TOTAL já pre-definido e a content vai "perdendo espaço"
-de acordo com o tamanho da MARGIN, BORDER e PADDING
-*/
+body {
+    background-color: darkgray;
+    margin: 20px;
+    /* O body tem uma margin: 10px POR PADRÃO */
+}
+div {
+    font-size: 25px;
+    height: 100px;
+    width: 200px;
+}
+.red {
+    background-color: red;
+    margin-bottom: 10px;
+    /*  vc pode especificar bottom, top, left, right pra que vc muda APENAS UM */
+}
+.green {
+    background-color: green;
+    /* ^ Se não especificar, vai ser TODOS OS LADOS IGUAIS */
+    margin: 10px;
+}
+.blue {
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    /* ^ Faz com que o conteúdo não fique colado na borda da minha caixa */
+    /* Novamento com o atalho pra modificar TODOS OS LADOS AO MESMO TEMPO */
+    border: 10px white solid;
+    /* ^ pra borda, vc precisa especificar TUDO na propria tag de style, então só dar um espaço e escrever o resto (ordem nao importa) */
+    border-radius: 15px;
+    /* ^ border-radius faz com que a borda seja ARREDONDADA, mais redonda quanto mais px */
+    /* outra coisa importante é, se vc 'nao tiver' borda (border: 0px), ainda funciona o radius */
+}
+img {
+    border-radius: 10px;
+    /* o border-radius funciona até mesmo para imagens! */
+}
