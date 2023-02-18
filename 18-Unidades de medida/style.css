@@ -1,0 +1,24 @@
+body {
+    color: white;
+    background-color: rgba(59, 59, 59, 100);
+                                    /*  ^ transparência da cor! (precisa escrever "rgba"*/
+    min-height: 100vh;
+  /* ^ isso daqui permite que a gente use o tamanho mínimo sendo a totalidade do body */
+  /* "vh" significa viewport-height, ou seja, basicamente tamanho da tela! */
+  /* 1vh = 1% do tamanho da tela */
+  /* Também existe vw = width */
+}
+img {
+    border-radius: 50%;
+                /*  ^ Colocando em 50%, a imagem vira um círculo */
+}
+.cards {
+    box-shadow: 0px 5px 12px 0px black;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    padding: 25px;
+    margin: 5px auto;
+              /* ^ isso daqui ta centralizando lateralmente, testa apagar pra entender */
+    border: 1px solid white;
+}

@@ -1,0 +1,91 @@
+body {
+    color: white;
+    background-color: rgb(46, 46, 46);
+}
+
+a {
+    color: rgb(252, 110, 133);
+}
+
+p {
+    font-size: 150%;
+            /*   ^ por padrão é 16px, colocando %, vc aumenta/diminui nessa relação, portanto aqui daria 24px, pq 16 + 50% de 16 = 16+8 = 24px */
+}
+
+div {
+    margin: 25px 0px;
+}
+
+a.um {
+    color: pink;
+    border: 2px solid rgb(218, 161, 205);
+    margin: 20px ;
+    /* ^ notar a diferença entre o margin e padding */
+}
+
+a.dois {
+    color: pink;
+    border: 2px solid rgb(218, 161, 205);
+    padding: 20px;
+}
+
+/* a margin vai fazer com q o texto antes e/ou depois seja afastado. Tamanhos para top e bottom são IGNORADOS*/
+/* o padding faz a mesma coisa, MAS não ignora top/bottom e vai sim sobrepor o resto com o border se vc colocar */
+
+.botao {
+    font-size: 200%;
+    display: inline;
+    /* ^ pq usar "display"? */
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+/* Elementos de bloco VÃO OCUPAR A LINHA TODA (aka: até o final da tela) 
+Pra vc poder colocar elementos de bloco (como <a> pra criar um botão e talz) na mesma linha,
+vc vai precisar "transformar eles em linha", pra isso serve o "display" */
+
+.container {
+    background-color: aquamarine;
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 400px;
+
+    display: flex;
+    /* ^ pro flex funcionar vc precisa colocar no elemento PAI/MAE do q vc quer fazer o flex */
+    flex-direction: row;
+    /* ^ padrão = row */
+    align-items: center;
+    /* ^ padrão = stretch */
+    justify-content: flex-start;
+    /* ^ padrão = left */
+}
+
+.item {
+    width: 100px;
+    background-color: white;
+    margin: 2px;
+    border: 3px solid black;
+    border-radius: 5px;
+
+    /* display: inline-block; */
+    /* colocando assim ^ "inline-block" ele vai alinha tudo e juntar de um jeito estranho! */
+    /* melhor opção é usar o "flex" NO CONTAINER */
+}
+
+.item-1 {
+    min-height: 100px;
+}
+
+.item-2 {
+    min-height: 200px;
+}
+
+.item-3 {
+    min-height: 80px;
+}
+
+.item-4 {
+    min-height: 120px;
+}

@@ -1,6 +1,19 @@
 body {
     font-size: 25px;
     background-color: darkgray;
+    background-image: url('images/bgimg.jpg');
+    /* ^ seleção de imagem pra BG, se separar por vírgulas, pode ser mais de uma */
+    /* o "url()" pode receber links da internet tbm! */
+    background-size: 200px;
+    /* ^ tamanho da imagem selecionada (redimensionamento) */
+    background-repeat: no-repeat;
+    /* ^ se a imagem vai repetir ou nao (ou repetição especifica, tipo na vertical ou horizontal */
+    background-position: 100px 300px;
+    /* ^ onde a imagem    ^ os números são para distancia da borda esquerda e de cima RESPECTIVAMENTE
+         começa */
+        /* position pode ser tbm left, right ou center */
+
+    /* TODAS AS CONFIGS fazem que, se tiver MAIS DE UMA BG, vc pode modificar cada uma das coisas só separando por vírgulas e farão referencia a cada uma delas */
 }
 a {
     text-decoration:overline line-through;
@@ -26,6 +39,7 @@ p {
 }
 p.lorem {
     font-size: 30px;
+    /* ^ o padrão é 16px */
     font-family: 'Lato', sans-serif;
                     /* ^ essa virgula seria um "fallback", ou seja, se nao encontrar a fonte q eu pedi, ele vai pra próxima da lista */
     font-weight: 300;
@@ -34,7 +48,7 @@ p.lorem {
 }
 nav > ul > li {
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     padding: 0px;
     list-style-type:georgian;
     /* ^ isso daqui vai mudar o pontinho q tem ANTES da lista pra oq vc quiser */
@@ -50,9 +64,9 @@ img.um {
     border-radius: 5px;
     width: 600px;
     border: 2px solid black;
-    box-shadow: 10px 10px 10px 2px black;
-            /*  ^   ^   ^   ^
-                1   2   3   4
+    box-shadow: 10px 10px 10px 2px purple, -10px -10px 10px 2px blue;
+            /*  ^     ^   ^     ^     ^    ^ a vírgula vai servir pra colocar MAIS UMA SOMBRA
+                1     2   3     4    esse é a a cor da sombra  
 box-shadow vai dar a impressão de uma SOMBRA na caixa
 1. quanto pra direita (aceita numeros negativos pra ir pra esquerda)
 2. pra baixo (mesma coisa, so q pra cima)
