@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background-color: rgb(34, 34, 34);
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: sans-serif;
+    font-size: 120%;
+}
+
+.input-container label {
+    color: white;
+    margin-bottom: 8px;
+}
+
+a {
+    color: pink
+}
+
+.container {
+    width: auto;
+    height: auto;
+    background-color: rgb(61, 61, 61);
+    margin: 5px;
+    padding: 25px;
+    border: 2px solid rgb(105, 105, 105);
+    border-radius: 15px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    font-size: 125%;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 25px;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    all: unset;
+    box-sizing: border-box;
+    width: 500px;
+    font-size: 125%;
+
+    margin-top: 3px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color:white;
+    background-color: rgb(12, 12, 12);
+}
+
+input:focus {
+    box-shadow: 0px 0px 15px 0px pink;
+}
+
+input:focus::placeholder {
+    color: rgb(56, 56, 56);
+}
+
+.botao {
+    all: unset;
+
+    background-color: blueviolet;
+    border: 2px solid rgb(107, 34, 175);
+    border-radius: 8px;
+
+    text-align: center;
+    width: 498px ;
+    padding: 5px;
+    font-size: 150%;
+}
+
+.botao:hover {
+    background-color: rgb(79, 26, 129);
+    cursor: pointer;
+}
