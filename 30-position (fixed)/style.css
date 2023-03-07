@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    position: sticky;
+            /* ^ pertence ao Document Flow. Se a pessoa não chegar, ele nao aparece, mas se a pessoa passar, ele continua na tela */
+            /* outro elemento sticky vai SOBREPOR o anterior se ambos tiverem sticky */
+    top: 0;
+}
+
+.top {
+    position: fixed;
+            /* ^ isso daqui tira o elemento do Document Flow e SEMPRE se orienta pelo BODY */
+    bottom: 20px;
+    left: 20px
+}

@@ -1,0 +1,27 @@
+* {
+    color: white;
+    background-color: black;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.gato {
+    position: relative;
+    left: 50px;
+    z-index: 1;
+    /* ^ o "z-index" vai posicionar as coisas no terceiro eixo */
+    /* Tem posições como auto e [numbers]  */
+    /* quem tiver o maior index, fica mais pra frente */
+}
+
+.cao {
+    position: relative;
+    bottom: 50px;
+}

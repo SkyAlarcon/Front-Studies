@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+
+    background-color: peachpuff;
+
+    padding: 15px;
+}
+
+.card {
+    width: 120px;
+    height: 80px;
+
+    background-color: palevioletred;
+
+    margin: 0 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.blue {
+    background-color: cornflowerblue;
+
+    position: relative;
+    /* ^ isso daqui da acesso a 5 outras propriedades, o "relative" é em função da posição q ele DEVERIA ESTAR */
+    /* PERTENCE AO "DOCUMENT FLOW" */
+    top: 50px;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    /* lembrando que isso é um espaço pra mover um pouco a posição, ele ainda ocupa o espaço q ocuparia sem o position */
+}
+
+.white {
+    background-color: whitesmoke;
+
+    position: absolute;
+    /* ^ não pertence ao DOCUMENT FLOW */
+    /*  Esse daqui vai servir pra realmente ser uma posição ABSOLUTA EM RELAÇÃO AO ELEMENTO COM UMA POSITION DIFERENTE DE STATIC (nesse caso div.container) */
+    top: 20px;
+}
