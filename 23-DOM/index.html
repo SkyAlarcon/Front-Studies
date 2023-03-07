@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM
+        </title>
+        <link rel="stylesheet" href="style.css" >
+        <style>
+            .escondido {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" onclick="mostrarMensagem()">Clique para mostrar mensagem</button>
+                            <!-- ^ isso daqui vai servir pra dar alguma forma de interção com o botão e ele começar a executar os eventos relacionados (no caso, oq vier dps do '=') -->
+        <p class="escondido" >Mensagem nem tão escondida</p>
+    </body>
+    <script>
+        const paragrafo = document.querySelector("p")
+
+        function mostrarMensagem() {
+            paragrafo.classList.toggle("escondido")
+                    /* ^ serve pra ver a lista de classes de um objeto*/
+                                /* ^ o toggle vai adicionar se nao tiver a classe desejada e remover se tiver */
+        }
+    </script>
+</html>
