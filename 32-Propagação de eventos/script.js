@@ -21,5 +21,5 @@ modal.addEventListener("click", function() {
 
 linkModal.addEventListener("click", function(event) {
     event.stopPropagation()
-        /* ^ isso daqui vai parar a propagação do evento pra outros elementos quando a gente clicar na imagem pra abrir o link */
+        /* ^ isso daqui vai parar a propagação do evento pra outros elementos quando a gente clicar na imagem pra abrir o link (propagação vai do menor pro maior */
 })

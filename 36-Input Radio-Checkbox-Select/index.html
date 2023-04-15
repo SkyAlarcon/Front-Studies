@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input type</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div>
+        É maior de idade?
+        <br>
+        <label>
+            Sim
+            <input type="radio" name="maiorDeIdade">
+                      <!-- ^ input q só deixa selecionar UMA opção q tem o mesmo "name" -->
+        </label>
+        <br>
+        <label>
+            Não
+            <input type="radio" name="maiorDeIdade" checked>
+                                                    <!-- ^ já começa a página com essa opção selecionada -->
+        </label>
+        <br>
+        <button type="submit">Enviar</button>
+    </div>
+    <div>
+        Eletrodomésticos
+        <br>
+        <label>
+            <input type="checkbox" name="eletrodomestico">
+                        <!-- ^ pode selecionar mais de um do mesmo "name" -->
+            Geladeira
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="eletrodomestico">
+            Microondas
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="eletrodomestico">
+            Forno elétrico
+        </label>
+        <br>
+        <button type="submit">Enviar</button>
+    </div>
+    <div>
+        Onde vc mora?
+        <br>
+        <label for="cidade">Cidade</label>
+        <select id="cidade">
+            <option value="RJ">RJ</option>
+                <!-- ^ essa tag vai ser o valor q vai ser devolvido pro código -->
+            <option value="SP">SP</option>
+            <option value="BH">BH</option>
+        </select>
+        <br>
+        <button type="submit">Enviar</button>
+    </div>
+</body>
+</html>

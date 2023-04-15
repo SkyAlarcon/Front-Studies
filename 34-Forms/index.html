@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <form action="">
+            <!-- ^ não sei oq faz esse action ainda -->
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="sky@doceu.com" required>
+                <!-- ^ tipos de input [number, password, text, email, data, etc] -->
+                <!-- Tem também coisas como [required, minlength, maxlength], mas podem ser burladas com facilidade com um "inspect" do browser -->
+            </div>
+            <div>
+                <label for="senha">Email</label>
+                <input id="senha" type="password" placeholder="senha" minlength="6" required>
+                <button type="submit">Entrar</button>
+            </div>
+        </form>
+    </div>    
+</body>
+</html>

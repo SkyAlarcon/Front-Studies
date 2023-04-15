@@ -1,0 +1,19 @@
+body {
+    min-height: 100vh;
+    
+    color: white;
+    background-color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    padding: 10px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}

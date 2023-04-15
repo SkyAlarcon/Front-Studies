@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <h1>Create account</h1>
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Sky do Céu" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="sky@doceu.com" required>
+            </div>
+            <div>
+                <label for="pwd">Password</label>
+                <input id="pwd" type="password" placeholder="password" required>
+            </div>
+            <div>
+                <label for="pwd-confirm">Confirm password</label>
+                <input id="pwd-confirm" type="password" placeholder="password" required>
+            </div>
+            <div>
+                Already user?
+                <br>
+                <label>
+                    Yes
+                    <input type="radio" name="user">
+                </label>
+                <label>
+                    No
+                    <input type="radio" name="user" checked>
+                </label>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
